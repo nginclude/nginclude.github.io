@@ -1,0 +1,18 @@
+{
+  "name": "nginclude",
+  "homepage": "nginclude.com",
+  "authors": [
+    "David Silva <contacto@dvidsilva.com>"
+  ],
+  "description": "directory for members and resources of the nginclude organization",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
