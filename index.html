@@ -1,33 +1,37 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>ngInclude</title>
-  <meta name="description" content="Directory for resources and members of ngInclude">
-  <meta name="author" content="ngInclude">
-
-  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-
-  <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-</head>
-
-<body>
-
-  <header class="container">
-    <div class="page-header">
-      <h1>Welcome to ngInclude</h1>
-    </div>
-  </header>
-  <main class="container">
-    <p>Site currently under construction, if you'd like to collaborate join us in
-      <a href="https://github.com/nginclude/nginclude.github.io" target="_blank">github</a>
-    </p>
-  </main>
-  <script src="bower_components/angular/angular.min.js"></script>
-  <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
-  <script src="components/main.js"></script>
-  <script src="components/routes.js"></script>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <title>ngInclude</title>
+    <meta name="description" content="Directory for resources and members of ngInclude">
+    <meta name="author" content="ngInclude">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+  </head>
+  <body ng-app="ng-include-directory">
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" ui-sref="home">ngInclude</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li ui-sref-active="active"><a ui-sref="home">Home</a></li>
+            <li ui-sref-active="active"><a ui-sref="organizations">Organizations</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main ui-view></main>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="components/main.js"></script>
+    <script src="components/routes.js"></script>
+    <script src="components/home/homeComponent.js"></script>
+    <script src="components/organizations/organizationsComponent.js"></script>
+    <script src="components/organizations/organizationsService.js"></script>
+  </body>
 </html>
+
