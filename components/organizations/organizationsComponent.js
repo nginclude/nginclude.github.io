@@ -22,6 +22,9 @@
     '          </div>',
     '        </div>',
     '      </div>',
+    '      <p>To add organization, create a PR including your data in the following file: ',
+    '        <a href="https://github.com/nginclude/nginclude.github.io/blob/master/data/organizations.json">organizations.json</a>.',
+    '        Find more information about conbributing on <a href="https://github.com/nginclude/nginclude.github.io/blob/master/README.md">github</a></p>',
     '  </main>'
   ];
   angular.module('ng-include-directory').component('organizations', {
