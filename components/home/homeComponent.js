@@ -1,6 +1,7 @@
 (function () {
   var template = [
     '  <main class="container">',
+    '    <h2>Challenge the status quo! Making the angular community more inclusive and welcoming for underrepresented groups</h2>'
     '    <p>Site currently under construction, if you&apos;d like to collaborate join us in',
     '      <a href="https://github.com/nginclude/nginclude.github.io" target="_blank">github</a>',
     '    </p>',
